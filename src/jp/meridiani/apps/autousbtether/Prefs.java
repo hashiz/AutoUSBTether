@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 public class Prefs {
 	private static Prefs mPrefs = null;
 	private static final String AUTO_USB_TETHERING = "auto_usb_tethering";
+	private static final String USB_STATE_RECEIVED = "usb_state_received";
 
 	private SharedPreferences mSharedPrefs = null;
 
@@ -27,5 +28,13 @@ public class Prefs {
 
 	public void setAutoUsbTethering(boolean enabled) {
 		mSharedPrefs.edit().putBoolean(AUTO_USB_TETHERING, enabled).apply();
+	}
+
+	public boolean isUsbStateReceived() {
+		return mSharedPrefs.getBoolean(USB_STATE_RECEIVED, false);
+	}
+
+	public void setUsbStateReceived(boolean received) {
+		mSharedPrefs.edit().putBoolean(USB_STATE_RECEIVED, received).apply();
 	}
 }
