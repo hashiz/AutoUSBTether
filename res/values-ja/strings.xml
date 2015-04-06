@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">テザリング設定を開く</string>
+    <string name="action_settings">設定</string>
+    <string name="auto_usb_tethering">USB接続でテザリング設定を開く</string>
+    <string name="launch_tethering_settings">テザリング設定を開く</string>
+
+</resources>
