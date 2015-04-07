@@ -13,16 +13,10 @@ public class CMProxy {
 		mCm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 		try {
 			mUsbRegexs = (String[])mCm.getClass().getDeclaredMethod("getTetherableUsbRegexs").invoke(mCm);
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
+		} catch (IllegalAccessException |
+				  IllegalArgumentException |
+				  InvocationTargetException |
+				  NoSuchMethodException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -31,16 +25,10 @@ public class CMProxy {
 	public void setUsbTethering(boolean enabled) {
 		try {
 			mCm.getClass().getDeclaredMethod("setUsbTethering", boolean.class).invoke(mCm, enabled);
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
+		} catch (IllegalAccessException |
+				  IllegalArgumentException |
+				  InvocationTargetException |
+				  NoSuchMethodException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -62,16 +50,10 @@ public class CMProxy {
 					}
 				}
 			}
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
+		} catch (IllegalAccessException |
+				  IllegalArgumentException |
+				  InvocationTargetException |
+				  NoSuchMethodException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
