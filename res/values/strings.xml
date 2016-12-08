@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">Launch Tethering Settings</string>
-    <string name="action_settings">Settings</string>
-    <string name="auto_usb_tethering">Launch Tethering Settings on USB Connected</string>
-    <string name="launch_tethering_settings">Launch Tethering Settings</string>
-
-</resources>
